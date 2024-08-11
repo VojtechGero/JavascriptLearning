@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="TemperatureCalc-style.css">
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="tempPanel">
+            <div class="item"><h2>Temperature convertion:</h2></div>
+            <div class="item"><input type="number" id="inputField"></div>
+            <br><br>
+            <div class="item">
+                <label for="F-C">Fahrenheit to Celsius</label>
+                <input type="radio" id="F-C" name="convertion">
+            </div>
+            <br>
+            <div class="item">
+                <label for="C-F">Celsius to Fahrenheit</label>
+                <input type="radio" id="C-F" name="convertion">
+            </div>
+            <br>
+            <div class="item"><button id="submitBtn">Submit</button></div>
+            <div class="item">
+                <h3 id="output"></h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="TemperatureCalc.js"></script>
+</body>
+</html>

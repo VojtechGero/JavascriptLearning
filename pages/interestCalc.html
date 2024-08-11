@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interestCalc-style.css">
+    <title>Interest calculator</title>
+</head>
+<body>
+    <div class="wrapper"> 
+        <h1 class="header">Interest Calculator</h1>
+        <div class="formWrap">
+            <form class="inputForm">
+                <label for="principal" class="formLabel">Principal amount:</label>
+                <br>
+                <input type="number" id="principal" class="numInput">
+                <hr>
+                <label for="rate" class="formLabel">Interest rate:</label>
+                <br>
+                <input type="number" id="rate" class="numInput">
+                <hr>
+                <label for="years" class="formLabel">Years:</label>
+                <br>
+                <input type="number" id="years" class="numInput">
+                <hr>
+                <button type="button" onclick="calculate()" class="submitBtn">submit</button>
+                <hr>
+                <p id="total">Total: <span id="total-amounts">$0.00</span></p>
+            </form>
+        </div>
+        
+    </div>
+    
+
+    <script src="interestCalc.js"></script>
+</body>
+</html>

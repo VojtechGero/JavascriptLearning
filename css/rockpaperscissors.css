@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+}
+.choice-btn {
+    background-color: rgb(0, 157, 255);
+    font-size: 7rem;
+    margin: 10px;
+    border-radius: 50%;
+    text-shadow: 0px 0px 30px;
+    border: none;
+}
+.choice-display {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#resultDisplay {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.greenText,
+#playerScoreDisplay {
+    color: rgb(99, 255, 47);
+}
+
+.redText,
+#computerScoreDisplay {
+    color: red;
+}
+
+.scoreDisplay {
+    font-size: 2rem;
+    font-weight: bold;
+}
