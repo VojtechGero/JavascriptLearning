@@ -1,13 +1,13 @@
-body{
-    font-family:  Helvetica, sans-serif;
+body {
+    font-family: Helvetica, sans-serif;
     background-color: rgb(223, 223, 223);
 }
 
-.wrapper{
+.wrapper {
     text-align: center;
 }
 
-.inputForm{
+.inputForm {
     background-color: white;
     width: 350px;
     border-width: 1px;
@@ -16,19 +16,19 @@ body{
     padding: 20px;
 }
 
-.formWrap{
+.formWrap {
     display: flex;
     justify-content: center;
 }
-.header{
+.header {
     font-size: 4rem;
     color: rgb(76, 76, 76);
 }
-.formLabel{
+.formLabel {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.numInput{
+.numInput {
     font-size: 1.5rem;
     width: 100px;
     margin-top: 10px;
@@ -37,25 +37,25 @@ body{
     text-align: center;
 }
 
-.submitBtn{
+.submitBtn {
     background-color: hsl(84, 84%, 42%);
     border-style: none;
     color: white;
     font-size: 1.5rem;
     border-radius: 5px;
 }
-.submitBtn:hover{
+.submitBtn:hover {
     background-color: hsl(84, 83%, 33%);
 }
-.submitBtn:active{
+.submitBtn:active {
     background-color: hsl(84, 84%, 42%);
 }
 
-#total{
+#total {
     font-size: 1.5rem;
     font-weight: 200;
 }
-#total-amounts{
-    color:hsl(84, 82%, 31%);
+#total-amounts {
+    color: hsl(84, 82%, 31%);
     font-weight: bold;
 }

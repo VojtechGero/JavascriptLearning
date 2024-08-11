@@ -1,6 +1,6 @@
 function FtoC(fahrenheit) {
     if (fahrenheit < minF) return null;
-    return (fahrenheit - 32) * 5/9;
+    return ((fahrenheit - 32) * 5) / 9;
 }
 function CtoF(celsius) {
     if (celsius < minC) return null;
@@ -19,7 +19,7 @@ let convertedValue, inputValue;
 
 btn.onclick = () => {
     inputValue = Number(input.value);
-    if (isNaN(inputValue)||!input.value) {
+    if (isNaN(inputValue) || !input.value) {
         alert("Please input valid value");
         return;
     }
@@ -31,7 +31,7 @@ btn.onclick = () => {
         convertedValue = CtoF(inputValue);
         if (convertedValue === null) alert("Please input valid value");
         else output.textContent = convertedValue.toFixed(2);
-    }else {
+    } else {
         convertedValue = FtoC(inputValue);
         if (convertedValue === null) alert("Please input valid value");
         else output.textContent = convertedValue.toFixed(2);

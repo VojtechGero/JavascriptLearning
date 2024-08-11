@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 10%;
+}
+.projectImage img {
+    height: 400px;
+    width: auto;
+}
+
+.projectDescription {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.floatingTop {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0c9;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid;
+    text-decoration: none;
+    font-weight: bold;
+}
