@@ -53,12 +53,6 @@ body {
 .link:visited {
     color: black;
 }
-#top {
-    background-color: rgb(247, 224, 24);
-    display: block;
-    position: relative;
-    z-index: 1;
-}
 #wrapper {
 }
 .thick-hr {
@@ -76,12 +70,6 @@ body {
     font-size: 1.5rem;
 }
 
-.header {
-    margin: 0 20%;
-    margin-top: 0;
-    padding: 5px 0;
-}
-
 .opening {
     margin: 0 10%;
 }
@@ -90,6 +78,17 @@ body {
     text-shadow: 4px 4px 5px rgb(141, 141, 141);
 }
 
+#top {
+    background-color: rgb(247, 224, 24);
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.header {
+    margin: 0 20%;
+    margin-top: 0;
+    padding: 5px 0;
+}
 .header-image {
     position: absolute;
     bottom: 10px;
@@ -99,4 +98,32 @@ body {
 .header-image img {
     height: 200px;
     width: auto;
+}
+.video {
+    margin-left: 100px;
+}
+.video iframe {
+    width: 750px;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.project-list {
+    background-color: hsl(45, 52%, 88%);
+}
+#bro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#bro-image img:hover {
+    cursor: pointer;
+}
+#on-bro {
+    background-color: white;
+    border-radius: 200px;
+    margin: 10px 5%;
 }

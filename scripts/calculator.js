@@ -12,7 +12,7 @@ function calculate() {
     try {
         newValue = eval(display.value);
         if (newValue == Infinity) throw new Error();
-        limit = Math.pow(10, 10);
+        limit = Math.pow(10, 9);
         display.value = Math.round((newValue + Number.EPSILON) * limit) / limit;
     } catch (error) {
         display.value = "Error";
