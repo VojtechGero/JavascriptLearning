@@ -9,15 +9,24 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <header id="top">
-            <div class="header">
-                <h1 id="MainHeader">Learning Javascript with Bro code</h1>
-                <p class="paragrapth">A journey of C-like languages enjoyer through the world of web development and
-                    javascript.</p>
-            </div>
 
+    <!-- Header -->
+    <div id="wrapper">
+        <header>
+            <div id="top">
+                <div class="header">
+                    <h1 id="MainHeader">Learning Javascript with Bro code</h1>
+                    <p class="paragrapth">A journey of C-like languages enjoyer through the world of web development and
+                        javascript.</p>
+                </div>
+                <div class="header-image">
+                    <img src="images/javascript.png" alt="JavascriptLogo">
+                </div>
+                <hr class="thick-hr">
+            </div>
         </header>
+
+        <!-- Opening statement -->
         <div class="opening">
             <h1 class="bigHeader">I never used Javascript!</h1>
             <p class="paragrapth">As a preparation for my Web appliactions course next semester I decided to learn some
@@ -26,48 +35,34 @@
                 <br>
                 For most of my life I have been using C-like languages. My first was C# and my second was C. Only for a
                 short
-                time did I actively use python, then came back to the good path with java and returned to C#. To this
-                day I
-                consider C# to be the best language for general use. In my mind OOP <i>(object
-                    oriented programing)</i> makes sense for big projects and having definite variable types just makes
-                things easier to work with.
+                time did I actively use python, then came back to the good path with java and returned to C#.
+                <br>
+                But for web development javascript is enevitable, thus here we are...
             </p>
         </div>
-        <hr>
+        <hr class="thick-hr smaller-hr">
         <div>
             <h1 class="bigHeader">Here are my projects:</h1>
         </div>
+
+        <!-- Projects -->
         <div class="projectContainer">
-            <div class="projectImage"><a href="pages/calculator.html"><img src="images/calculator.png" alt=""></a></div>
+            <div class="projectImage"><a href="pages/calculator.html" class="link"><img src="images/calculator.png"
+                        alt=""></a></div>
             <div class="projectDescription">
-                <h2 class="smallHeader"><a href="pages/calculator.html">Calculator</a></h2>
-                <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
-                    officiis blanditiis,
-                    omnis
-                    obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem. Dolores
-                    ipsam
-                    ducimus molestias.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea officiis blanditiis,
-                    omnis
-                    obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem. Dolores
-                    ipsam
-                    ducimus molestias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
-                    officiis blanditiis,
-                    omnis
-                    obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem. Dolores
-                    ipsam
-                    ducimus molestias.</p>
-                <a href="pages/calculator.html">calculator</a>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/I5kj-YsmWjM">
-                </iframe>
+                <h2 class="smallHeader"><a href="pages/calculator.html" class="link">Calculator</a></h2>
+                <p class="paragrapth">
+                    One of the typical programming projects is a calculator so this one was obvious. Bro Code's
+                    implementation was specific by using the <i>Eval</i> function, thus removing lot of the dificulties
+                    with order of operations.
+                </p>
+                <a href="pages/calculator.html" class="link">calculator</a>
             </div>
 
         </div>
         <div class="projectContainer">
             <div class="projectDescription">
-                <h2 class="smallHeader">Description</h2>
+                <h2 class="smallHeader"><a href="pages/clock.html" class="link">Clock</a></h2>
                 <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
                     officiis blanditiis,
                     omnis
@@ -80,10 +75,11 @@
                     ipsam
                     ducimus molestias.</p>
             </div>
-            <div class="projectImage"><img src="images/calculator.png" alt=""></div>
+            <div class="projectImage"><a href="pages/clock.html" class="link"><img src="images/clock.png" alt=""></a>
+            </div>
         </div>
         <div class="projectContainer">
-            <div class="projectImage"><img src="images/calculator.png" alt=""></div>
+            <div class="projectImage"><img alt="" class="link"></div>
             <div class="projectDescription">
                 <h2 class="smallHeader">Description</h2>
                 <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
@@ -105,9 +101,10 @@
                     ducimus molestias.</p>
             </div>
         </div>
-
-        <a href="index.html#top" class="floatingTop">
-            Top
+        <a href="index.html#top" class="link">
+            <span class="floatingTop">
+                Top
+            </span>
         </a>
         <footer></footer>
 
