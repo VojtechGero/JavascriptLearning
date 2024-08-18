@@ -43,4 +43,8 @@ input {
 
 img {
     width: 200px;
+    margin: 10px;
+}
+#diceResult {
+    font-size: 2rem;
 }

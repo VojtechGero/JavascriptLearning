@@ -5,11 +5,19 @@ body {
     margin: 0;
 }
 
-.projectContainer {
-    display: flex;
-    flex-direction: row;
+.projectContainerRight {
+    display: grid;
     padding: 2% 8%;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
+.projectContainerLeft {
+    display: grid;
+    padding: 2% 8%;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
 .projectImage img {
     height: 400px;
     width: auto;
@@ -22,7 +30,6 @@ body {
     border: 5px dotted;
 }
 .projectDescription {
-    padding: 0 20px;
     text-align: left;
 }
 .smaller-hr {
@@ -53,6 +60,12 @@ body {
 .link:visited {
     color: black;
 }
+.paragrapthLink {
+    color: blue;
+}
+.paragrapthLink:visited {
+    color: blue;
+}
 #wrapper {
 }
 .thick-hr {
@@ -68,6 +81,7 @@ body {
 
 .paragrapth {
     font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 .opening {
@@ -100,7 +114,9 @@ body {
     width: auto;
 }
 .video {
-    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .video iframe {
     width: 750px;
@@ -115,15 +131,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 #bro-image img:hover {
     cursor: pointer;
 }
 #on-bro {
     background-color: white;
-    border-radius: 200px;
+    border-radius: 100px;
     margin: 10px 5%;
+}
+
+@media (max-width: 1024px) {
+    .projectContainerLeft,
+    .projectContainerRight {
+        grid-template-columns: 1fr;
+        padding: 10% 4%;
+    }
 }

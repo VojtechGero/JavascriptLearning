@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Learning Projects</title>
+    <link rel="icon" type="image/png" href="images/javascript.png">
     <link rel="stylesheet" href="css/index-style.css">
 </head>
 
@@ -34,7 +35,7 @@
                 For most of my life I have been using C-like languages. My first was C# and my second was C. Only for a
                 short
                 time did I actively use python, then came back to the good path with java and returned to C#.
-                <br> <br>
+                <br>
                 But for web development JavaScript is enevitable, thus here we are...
             </p>
         </div>
@@ -42,7 +43,7 @@
 
 
         <div id="on-bro">
-            <div class="projectContainer">
+            <div class="projectContainerLeft">
                 <div>
                     <h2 class="bigHeader">Bro code</h2>
                     <p class="paragrapth">
@@ -75,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="projectContainer">
+            <div class="projectContainerLeft">
                 <div>
                     <h2 class="bigHeader">JavaScript course</h2>
                     <p class="paragrapth">
@@ -101,35 +102,115 @@
 
 
 
-
         <!-- Projects -->
+
+        <!--
+        <div class="projectContainerLeft">
+                <div class="projectDescription">
+                    <h2 class="smallHeader">
+                        Clock
+                    </h2>
+                    <p class="paragrapth">
+                        Lorem ipsum dolor sit amet
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/dice-roller.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
+                <div class="projectImage">
+                    <img src="images/clock.png" alt="Clock Image">
+                </div>
+            </div>
+        -->
+
+
         <div class="project-list">
             <hr class="thick-hr">
             <div>
                 <h1 class="bigHeader">Here are my projects:</h1>
             </div>
-            <div class="projectContainer">
+            <div class="projectContainerLeft">
+                <div class="projectDescription">
+                    <h2 class="smallHeader">
+                        Temperature convertor
+                    </h2>
+                    <p class="paragrapth">
+                        The first project I did was a temperature convertor, converting between Fahrenheit and Celsius.
+                        In the project I used the Math class to convert between the two units. Most of the code is in
+                        the submit button event handler, aside from two functions for respective conversions. The cases
+                        with not selecting conversion or not inputing a number are comunicated using alerts.
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/temperature-convertor.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
                 <div class="projectImage">
-                    <a href="pages/calculator.html" class="link">
-                        <img src="images/calculator.png" alt="">
-                    </a>
+                    <img src="images/temperature-calculator.png" alt="Temperature convertor image">
+                </div>
+            </div>
+
+
+            <div class="projectContainerRight">
+                <div class="projectImage">
+                    <img src="images/dice-roller.png" alt="Calculator image">
                 </div>
                 <div class="projectDescription">
-                    <h2 class="smallHeader"><a href="pages/calculator.html" class="link">Calculator</a></h2>
+                    <h2 class="smallHeader">Dice roller</h2>
+                    <p class="paragrapth">
+                        Another project I did was a dice rolling site. The dice were selected using string concatenation
+                        when selecting the path to the image. The images are inserted into a div using innerHTML
+                        artibute of a <i>&lt;div&gt;</i> element, which is not a ideal way to do that. But the project
+                        was
+                        focused on arrays first and formost. The result of each respective dice roll is stored in a
+                        array and same goes to the created <i>&lt;img&gt;</i> elements as string that are in the end
+                        inserted into
+                        the innerHTML.
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/dice-roller.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="projectContainerLeft">
+                <div class="projectDescription">
+                    <h2 class="smallHeader">
+                        Compound interest calculator
+                    </h2>
+                    <p class="paragrapth">
+                        Lorem ipsum dolor sit amet
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/interest-calc.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
+                <div class="projectImage">
+                    <img src="images/interest-calc.png" alt="Interest calculator">
+                </div>
+            </div>
+
+
+            <div class="projectContainerRight">
+                <div class="projectImage">
+                    <img src="images/calculator.png" alt="Calculator image">
+                </div>
+                <div class="projectDescription">
+                    <h2 class="smallHeader">Calculator</h2>
                     <p class="paragrapth">
                         One of the typical programming projects is a calculator so this one was obvious. Bro Code's
                         implementation was specific by using the <i>Eval</i> function, thus removing lot of the
-                        dificulties
-                        with order of operations.
+                        dificulties with order of operations.
                     </p>
                     <a href="pages/calculator.html" class="link">calculator</a>
                 </div>
-
             </div>
-            <div class="projectContainer">
+
+
+            <div class="projectContainerLeft">
                 <div class="projectDescription">
                     <h2 class="smallHeader">
-                        <a href="pages/clock.html" class="link">Clock</a>
+                        Clock
                     </h2>
                     <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
                         officiis blanditiis,
@@ -146,35 +227,7 @@
                         ducimus molestias.</p>
                 </div>
                 <div class="projectImage">
-                    <a href="pages/clock.html" class="link">
-                        <img src="images/clock.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="projectContainer">
-                <div class="projectImage"><img alt="" class="link"></div>
-                <div class="projectDescription">
-                    <h2 class="smallHeader">Description</h2>
-                    <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
-                        officiis blanditiis,
-                        omnis
-                        obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem.
-                        Dolores
-                        ipsam
-                        ducimus molestias.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea officiis blanditiis,
-                        omnis
-                        obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem.
-                        Dolores
-                        ipsam
-                        ducimus molestias.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea officiis blanditiis,
-                        omnis
-                        obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem.
-                        Dolores
-                        ipsam
-                        ducimus molestias.</p>
+                    <img src="images/clock.png" alt="Clock Image">
                 </div>
             </div>
         </div>

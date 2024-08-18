@@ -7,7 +7,7 @@ const sides = [
     "dice-side-6",
 ];
 
-const basepath = "../images/";
+const basepath = "../images/dice/";
 const extention = ".png";
 
 function rollDice() {
@@ -29,6 +29,7 @@ function rollDice() {
                 '">'
         );
     }
-    diceResult.textContent = "dice: " + values.join(", ");
+    diceResult.textContent =
+        "dice result" + (number > 1 ? "s" : "") + ": " + values.join(", ");
     diceImages.innerHTML = images.join("");
 }
