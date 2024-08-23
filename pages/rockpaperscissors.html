@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors!</title>
-    <link rel="stylesheet" href="../css/rockpaperscissors.css">
+    <link rel="stylesheet" href="../css/rockpaperscissors-style.css">
+    <link rel="stylesheet" href="../css/project-header-style.css">
+    <link rel="icon" type="image/png" href="../images/javascript.png">
 </head>
 
 <body>
 
-    <h1>Rock - Paper - Scissors</h1>
-    <div id="choices">
-        <button onclick="playGame('rock')" class="choice-btn">👊</button>
-        <button onclick="playGame('paper')" class="choice-btn">🖐️</button>
-        <button onclick="playGame('scissors')" class="choice-btn">✌️</button>
-    </div>
-    <div id="playerDisplay" class="choice-display">PLAYER: </div>
-    <div id="computerDisplay" class="choice-display">COMPUTER: </div>
-    <div id="resultDisplay"></div>
+    <header>
+        <div id="header-div">
+            <a href="../index.html#rockpaperscissors" id="return-link">
+                <span id="project-header">
+                    Go back
+                </span>
+            </a>
+        </div>
+    </header>
+    <div id="wrapper">
+        <h1>Rock - Paper - Scissors</h1>
+        <div id="choices">
+            <button onclick="playGame('rock')" class="choice-btn">👊</button>
+            <button onclick="playGame('paper')" class="choice-btn">🖐️</button>
+            <button onclick="playGame('scissors')" class="choice-btn">✌️</button>
+        </div>
+        <div id="playerDisplay" class="choice-display">PLAYER: </div>
+        <div id="computerDisplay" class="choice-display">COMPUTER: </div>
+        <div id="resultDisplay"></div>
 
-    <div class="scoreDisplay"> Player Score:
-        <span id="playerScoreDisplay">0</span>
-    </div>
-    <div class="scoreDisplay"> Computer Score:
-        <span id="computerScoreDisplay">0</span>
+        <div class="scoreDisplay"> Player Score:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="scoreDisplay"> Computer Score:
+            <span id="computerScoreDisplay">0</span>
+        </div>
     </div>
 
     <script src="../scripts/rockpaperscissors.js"></script>

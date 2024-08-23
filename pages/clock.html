@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real time clock!</title>
     <link rel="stylesheet" href="../css/clock-style.css">
+    <link rel="stylesheet" href="../css/project-header-style.css">
+    <link rel="icon" type="image/png" href="../images/javascript.png">
 </head>
 
 <body>
+    <header>
+        <div id="header-div">
+            <a href="../index.html#clock" id="return-link">
+                <span id="project-header">
+                    Go back
+                </span>
+            </a>
+        </div>
+    </header>
     <div id="clockContainer">
         <div id="clock">
-            00:00:00
+            <div id="hours">00</div>
+            <div class="separator">:</div>
+            <div id="minutes">00</div>
+            <div class="separator">:</div>
+            <div id="seconds">00</div>
         </div>
     </div>
     <script src="../scripts/clock.js" defer></script>

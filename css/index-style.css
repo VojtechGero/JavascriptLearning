@@ -23,6 +23,7 @@ body {
     width: auto;
     transition: all 0.5s ease-in-out;
     border: 5px dotted transparent;
+    border-radius: 50px;
 }
 
 .projectImage img:hover {
@@ -131,6 +132,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#bro-image img {
+    border-radius: 25px;
 }
 #bro-image img:hover {
     cursor: pointer;

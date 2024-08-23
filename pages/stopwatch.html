@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
     <link rel="stylesheet" href="../css/stopwatch-style.css" />
+    <link rel="stylesheet" href="../css/project-header-style.css">
+    <link rel="icon" type="image/png" href="../images/javascript.png">
 </head>
 
 <body>
-    <h1 id="title">Stopwatch</h1>
-    <div id="container">
-        <div id="display">00:00:00:00</div>
-        <div id="controls">
-            <button id="startBtn" onclick="start()">Start</button>
-            <button id="stopBtn" onclick="stop()">Stop</button>
-            <button id="resetBtn" onclick="reset()">Reset</button>
+    <header>
+        <div id="header-div">
+            <a href="../index.html#stopwatch" id="return-link">
+                <span id="project-header">
+                    Go back
+                </span>
+            </a>
+        </div>
+    </header>
+    <div id="wrapper">
+        <h1 id="title">Stopwatch</h1>
+        <div id="container">
+            <div id="display">00:00:00:00</div>
+            <div id="controls">
+                <button id="startBtn" onclick="start()">Start</button>
+                <button id="stopBtn" onclick="stop()">Stop</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+            </div>
         </div>
     </div>
+
     <script src="../scripts/stopwatch.js" defer></script>
 </body>
 

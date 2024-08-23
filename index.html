@@ -10,20 +10,20 @@
 </head>
 
 <body>
-
+    <header>
+        <div id="top">
+            <div class="header">
+                <h1 id="MainHeader">Learning Javascript with Bro Code</h1>
+            </div>
+            <div class="header-image">
+                <img src="images/javascript.png" alt="JavascriptLogo">
+            </div>
+            <hr class="thick-hr">
+        </div>
+    </header>
     <!-- Header -->
     <div id="wrapper">
-        <header>
-            <div id="top">
-                <div class="header">
-                    <h1 id="MainHeader">Learning Javascript with Bro Code</h1>
-                </div>
-                <div class="header-image">
-                    <img src="images/javascript.png" alt="JavascriptLogo">
-                </div>
-                <hr class="thick-hr">
-            </div>
-        </header>
+
 
         <!-- Opening statement -->
         <div class="opening">
@@ -129,7 +129,8 @@
             <div>
                 <h1 class="bigHeader">Here are my projects:</h1>
             </div>
-            <div class="projectContainerLeft">
+
+            <div class="projectContainerLeft" id="temperature-convertor">
                 <div class="projectDescription">
                     <h2 class="smallHeader">
                         Temperature convertor
@@ -150,7 +151,7 @@
             </div>
 
 
-            <div class="projectContainerRight">
+            <div class="projectContainerRight" id="dice-roller">
                 <div class="projectImage">
                     <img src="images/dice-roller.png" alt="Calculator image">
                 </div>
@@ -173,25 +174,63 @@
             </div>
 
 
-            <div class="projectContainerLeft">
+            <div class="projectContainerLeft" id="interest-calc">
                 <div class="projectDescription">
                     <h2 class="smallHeader">
                         Compound interest calculator
                     </h2>
                     <p class="paragrapth">
-                        Lorem ipsum dolor sit amet
+                        The compound interest calculator project was focused on user input and it's handling. As it came
+                        soon after the other two projects, it does not introduce many new concepts.
                     </p>
                     <p class="paragrapth">
                         <a href="pages/interest-calc.html" class="paragrapthLink">You can try it out here!</a>
                     </p>
                 </div>
                 <div class="projectImage">
-                    <img src="images/interest-calc.png" alt="Interest calculator">
+                    <img src="images/interest-calc.png" alt="Interest calculator image">
                 </div>
             </div>
 
 
-            <div class="projectContainerRight">
+            <div class="projectContainerRight" id="clock">
+                <div class="projectImage">
+                    <img src="images/clock.png" alt="Clock Image">
+                </div>
+                <div class="projectDescription">
+                    <h2 class="smallHeader">
+                        Clock
+                    </h2>
+                    <p class="paragrapth">
+                        Another quick project was a digital clock. Using the Date class to get the current time in
+                        regular intervals and updating the time display accordingly.
+                    </p>
+
+                    <p class="paragrapth">
+                        <a href="pages/clock.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="projectContainerLeft" id="stopwatch">
+                <div class="projectDescription">
+                    <h2 class="smallHeader">
+                        Stopwatch
+                    </h2>
+                    <p class="paragrapth">
+                        The stopwatch project is also using the Date class, the stopwatch allows the user to start, stop
+                        and reset the timer.
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/stopwatch.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
+                </div>
+                <div class="projectImage">
+                    <img src="images/stopwatch.png" alt="Stopwatch image">
+                </div>
+            </div>
+
+            <div class="projectContainerRight" id="calculator">
                 <div class="projectImage">
                     <img src="images/calculator.png" alt="Calculator image">
                 </div>
@@ -202,32 +241,27 @@
                         implementation was specific by using the <i>Eval</i> function, thus removing lot of the
                         dificulties with order of operations.
                     </p>
-                    <a href="pages/calculator.html" class="link">calculator</a>
+
+                    <p class="paragrapth">
+                        <a href="pages/calculator.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
                 </div>
             </div>
 
 
-            <div class="projectContainerLeft">
+            <div class="projectContainerLeft" id="rockpaperscissors">
                 <div class="projectDescription">
-                    <h2 class="smallHeader">
-                        Clock
-                    </h2>
-                    <p class="paragrapth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
-                        officiis blanditiis,
-                        omnis
-                        obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem.
-                        Dolores
-                        ipsam
-                        ducimus molestias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora ea
-                        officiis blanditiis,
-                        omnis
-                        obcaecati facere minima similique soluta ducimus, provident quae id, at molestiae quidem.
-                        Dolores
-                        ipsam
-                        ducimus molestias.</p>
+                    <h2 class="smallHeader">Rock Paper Scissors</h2>
+                    <p class="paragrapth">
+                        Last project I did as a part of bro code's main series of videos was a game of rock paper
+                        scissors. The game tracks the player's and computer's score from the current session.
+                    </p>
+                    <p class="paragrapth">
+                        <a href="pages/rockpaperscissors.html" class="paragrapthLink">You can try it out here!</a>
+                    </p>
                 </div>
                 <div class="projectImage">
-                    <img src="images/clock.png" alt="Clock Image">
+                    <img src="images/rockpaperscissors.png" alt="Rock Paper Scissors image">
                 </div>
             </div>
         </div>
@@ -239,10 +273,9 @@
                 Top
             </span>
         </a>
-        <!-- footer -->
-        <footer></footer>
-
     </div>
+    <!-- footer -->
+    <footer></footer>
 </body>
 
 </html>
