@@ -41,6 +41,18 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    #keys button {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 10vw;
+        font-size: 2rem;
+    }
+    #display {
+        font-size: 2rem;
+    }
+}
+
 #keys button:hover {
     background-color: hsl(0, 0%, 60%);
 }

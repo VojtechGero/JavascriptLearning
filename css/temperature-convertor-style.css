@@ -11,7 +11,8 @@ body {
 .tempPanel {
     margin: 20px;
     display: block;
-    width: 35%;
+    max-width: 500px;
+    width: 100%;
     background-color: rgb(178, 178, 178);
     border-radius: 10%;
 }
@@ -28,8 +29,18 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0 10%;
 }
 
 #inputField {
     font-size: 2rem;
+    width: 200px;
+}
+@media (max-width: 500px) {
+    #header {
+        font-size: 1.5rem;
+    }
+    .tempPanel {
+        border-radius: 20px;
+    }
 }

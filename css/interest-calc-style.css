@@ -59,3 +59,8 @@ body {
     color: hsl(84, 82%, 31%);
     font-weight: bold;
 }
+@media (max-width: 500px) {
+    .header {
+        font-size: 2rem;
+    }
+}
